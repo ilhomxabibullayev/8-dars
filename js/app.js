@@ -11,9 +11,8 @@ fetch('https://fakestoreapi.com/products')
         <h2>${product.title}</h2>
         <p>${product.description.substring(0, 100)}...</p>
         <p><strong>Price:</strong> $${product.price}</p>
-        `;
-
-            productsContainer.appendChild(productElement);
+        `
+            productsContainer.appendChild(productElement)
         })
     })
     .catch(error => {
